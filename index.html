@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="APAAR SmartVerify - AI-assisted pre-upload student data validation for educational institutions. Verify Before You Upload.">
+  <title>APAAR SmartVerify | Verify Before You Upload</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#page">Skip to content</a>
+
+<!-- ============ LANDING PAGE ============ -->
+<div id="landing" class="route" hidden>
+  <header class="l-nav">
+    <div class="l-nav-inner">
+      <a href="#/landing" class="brand"><span class="brand-mark">AS</span> APAAR SmartVerify</a>
+      <nav aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#security">Security</a>
+        <a href="#/login" class="btn btn-primary btn-sm">Open Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="logo-card" aria-label="AICTE logo">
+        <img src="assets/aicte-logo.jpeg" alt="AICTE - All India Council for Technical Education logo" id="aicteLogo">
+        <div class="logo-fallback" id="logoFallback" hidden>
+          <strong>AICTE</strong>
+          <span>Save your logo file as<br><code>assets/aicte-logo.jpeg</code></span>
+        </div>
+      </div>
+      <p class="eyebrow">Institution-side data quality platform</p>
+      <h1>APAAR SmartVerify</h1>
+      <p class="hero-sub">AI-Powered Pre-Upload Student Data Validation and Verification Platform for Educational Institutions</p>
+      <p class="tagline">Verify Before You Upload.</p>
+      <div class="hero-cta">
+        <a href="#/login" class="btn btn-primary btn-lg">Open Demo Dashboard</a>
+        <a href="#workflow" class="btn btn-ghost btn-lg">See how it works</a>
+      </div>
+      <p class="disclaimer">Independent hackathon project. Not affiliated with, endorsed by, or connected to AICTE or the official APAAR portal. The logo is shown for context only. All demo data is synthetic.</p>
+    </div>
+  </section>
+
+  <section id="problem" class="l-section">
+    <div class="l-wrap two-col">
+      <div>
+        <h2>The problem</h2>
+        <p>Institutions prepare large student datasets before uploading them to an authorized academic portal. Missing fields, malformed dates, duplicate identifiers and inconsistent values are usually found only after upload, causing rework and delays.</p>
+      </div>
+      <div>
+        <h2>The solution</h2>
+        <p><em>We don't replace the official APAAR portal. We help institutions identify and correct data-quality issues before uploading student records to it.</em></p>
+        <p>Every finding is explained, comes with a suggested action, and stays under human control.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="l-section alt">
+    <div class="l-wrap">
+      <h2 class="center">Core capabilities</h2>
+      <div class="cards">
+        <article class="card"><h3>Mandatory &amp; format checks</h3><p>Configurable required fields, date validation and identifier patterns. Original values are never destroyed.</p></article>
+        <article class="card"><h3>Duplicate detection</h3><p>Exact duplicates plus fuzzy name similarity (suggestions only - never auto-merged or deleted).</p></article>
+        <article class="card"><h3>Cross-field rules</h3><p>Admission year versus academic year, age at admission and unusual-pattern review flags.</p></article>
+        <article class="card"><h3>Document text comparison</h3><p>Compare pasted or extracted document text with record fields. A match is not proof of authenticity.</p></article>
+        <article class="card"><h3>Transparent quality score</h3><p>A weighted 0-100 data-quality indicator with visible dimensions. Not an official verification score.</p></article>
+        <article class="card"><h3>Audit &amp; exports</h3><p>Every action is logged. Export corrected datasets and detailed issue reports as CSV or XLSX.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow" class="l-section">
+    <div class="l-wrap">
+      <h2 class="center">How it works</h2>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Upload</h3><p>Drop a CSV/XLSX file or load the synthetic demo set.</p></div></li>
+        <li><span>2</span><div><h3>Map &amp; preview</h3><p>Confirm how your columns map to canonical fields.</p></div></li>
+        <li><span>3</span><div><h3>Validate</h3><p>Run the rule engine and review explained findings.</p></div></li>
+        <li><span>4</span><div><h3>Correct &amp; re-run</h3><p>Fix values, record decisions, re-validate and compare runs.</p></div></li>
+        <li><span>5</span><div><h3>Export</h3><p>Download the corrected dataset and issue reports.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="security" class="l-section alt">
+    <div class="l-wrap two-col">
+      <div>
+        <h2>Security &amp; privacy</h2>
+        <ul class="ticks">
+          <li>Role-based permissions (Administrator, Data Entry Staff, Reviewer)</li>
+          <li>All output is HTML-escaped; exports are protected against spreadsheet formula injection</li>
+          <li>Audit log of corrections, reviews, validations and exports</li>
+          <li>Synthetic data only; no third-party AI or network calls for validation</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Honest limitations</h2>
+        <ul class="ticks warn">
+          <li>No connection to the official APAAR portal</li>
+          <li>Missing APAAR IDs are never guessed or generated</li>
+          <li>Text matching does not authenticate a document or an identity</li>
+          <li>This demo runs in your browser; production use needs a secured server backend</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to see it in action?</h2>
+    <a href="#/login" class="btn btn-primary btn-lg">Open Demo Dashboard</a>
+  </section>
+
+  <footer class="l-footer">
+    <p>&copy; <span id="yr"></span> APAAR SmartVerify - hackathon demonstration. Local reports are not official APAAR certificates.</p>
+  </footer>
+</div>
+
+<!-- ============ LOGIN ============ -->
+<div id="login" class="route login-wrap" hidden>
+  <form id="loginForm" class="login-card" novalidate autocomplete="off">
+    <a href="#/landing" class="brand dark"><span class="brand-mark">AS</span> APAAR SmartVerify</a>
+    <h1>Sign in</h1>
+    <p class="muted">Demo mode - synthetic data only.</p>
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="admin@demo.edu" required>
+    <small class="err" id="emailErr"></small>
+    <label for="password">Password</label>
+    <div class="pw">
+      <input id="password" type="password" placeholder="Password" required>
+      <button type="button" id="togglePw" class="btn btn-ghost btn-sm" aria-label="Show or hide password">Show</button>
+    </div>
+    <small class="err" id="pwErr"></small>
+    <div class="alert error" id="loginErr" hidden></div>
+    <button class="btn btn-primary btn-block" id="loginBtn" type="submit">Sign in</button>
+    <details class="demo-creds" open>
+      <summary>Demo credentials</summary>
+      <table>
+        <tr><td>Administrator</td><td>admin@demo.edu</td><td>Admin@123</td></tr>
+        <tr><td>Data Entry</td><td>staff@demo.edu</td><td>Staff@123</td></tr>
+        <tr><td>Reviewer</td><td>reviewer@demo.edu</td><td>Review@123</td></tr>
+      </table>
+      <p class="muted small">Client-side demo authentication only. Real deployments need server-side hashed passwords and sessions.</p>
+    </details>
+  </form>
+</div>
+
+<!-- ============ APP SHELL ============ -->
+<div id="shell" class="route shell" hidden>
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <a href="#/dashboard" class="brand light"><span class="brand-mark">AS</span> SmartVerify</a>
+    <nav id="sideNav"></nav>
+    <p class="side-foot">Data-quality tool.<br>Not an official APAAR system.</p>
+  </aside>
+  <div class="main-col">
+    <header class="topbar">
+      <button class="btn btn-ghost btn-sm menu-btn" id="menuBtn" aria-label="Toggle navigation">Menu</button>
+      <div class="crumbs" id="crumbs"></div>
+      <input type="search" id="globalSearch" placeholder="Search records (name, reference, ID)..." aria-label="Global record search">
+      <div class="user-box">
+        <div><strong id="uName"></strong><span class="role" id="uRole"></span></div>
+        <button class="btn btn-ghost btn-sm" id="logoutBtn">Logout</button>
+      </div>
+    </header>
+    <main id="page" tabindex="-1"></main>
+  </div>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toasts" aria-live="polite"></div>
+
+<noscript><p class="noscript">JavaScript is required to run APAAR SmartVerify.</p></noscript>
+
+<!-- Optional: SheetJS for XLSX import/export. App works with CSV if this fails to load. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
